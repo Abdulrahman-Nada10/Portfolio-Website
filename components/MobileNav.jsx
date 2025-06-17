@@ -8,10 +8,6 @@ const Links =[
         name: "home",
         path: "/"
     },
-       {
-        name: "home",
-        path: "/"
-    },
     {
         name: "services",
         path: "/services"
@@ -37,7 +33,20 @@ const MobileNav = () => {
             <CiMenuFries className=" text-[32px] text-emerald-500"/>
         </SheetTrigger>
         <SheetContent className="flex flex-col">
-            <div className='p-4'>logo</div>
+            <div className='mt-32 mb-40 text-center text-2xl'>
+                <Link href="/">
+                    <h1 className='text-4xl font-semibold'>Loki <span className='text-emerald-500'>.</span></h1>
+                </Link>
+            </div>
+            <nav className='flex flex-col justify-center items-center gap-8'>
+              {Links.map((links , index) => {
+                return (
+                    <Link href={links.path} key={index} className={`${links.path === pathname && `text-emerald-500 border-b-2 border-emerald-500 text-xl capitalize hover:text-emerald-500 transition-all`} text-xl capitalize hover:text-emerald-500 transition-all`}>
+                        {links.name}
+                    </Link>
+                )
+              })}  
+            </nav>
         </SheetContent>
     </Sheet>
   )
