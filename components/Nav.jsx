@@ -15,10 +15,10 @@ const Links =[
   //   name: 'Student',
   //   path: '/Student',
   // },
-  {
-    name: 'Team Work',
-    path: '/work',
-  },
+  // {
+  //   name: 'Team Work',
+  //   path: '/work',
+  // },
   {
     name: 'Join us',
     path: '/contact',
