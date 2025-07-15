@@ -74,11 +74,9 @@ const page = () => {
           return (
             <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={team.img}
-                alt="green iguana"
+              <img
+                src={team.img}
+                alt={team.name}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div" className='text-center'>
