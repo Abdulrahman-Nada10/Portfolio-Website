@@ -19,7 +19,6 @@ export default function Home() {
             <Photo/>
           </div>
           <div className="text-center xl:text-right order-2 xl:order-none p-4">
-            <span className="text-xl">أهلا بالجميع</span>
             <h1 className="h1 font-serif text-[#508399] mx-2 text-right">مرحبا بكم في</h1>
              <h1 className="h1 text-[#508399] text-right font-bold mb-6">CODE WAY</h1>
             <p className="max-w-[550px] p-4 text-[#16323e] text-2xl ">

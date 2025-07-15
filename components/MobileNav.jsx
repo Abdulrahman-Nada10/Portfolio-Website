@@ -12,10 +12,10 @@ const Links =[
         name: "services",
         path: "/services"
     },
-    {
-        name: "resume",
-        path: "/resume"
-    },
+    // {
+    //     name: "resume",
+    //     path: "/resume"
+    // },
     {
         name: "work",
         path: "/work"
@@ -35,7 +35,7 @@ const MobileNav = () => {
         <SheetContent className="flex flex-col">
             <div className='mt-32 mb-40 text-center text-2xl'>
                 <Link href="/">
-                    <h1 className='text-4xl font-semibold text-white'>CODE WAY <span className='text-[#78d0d3]'>.</span></h1>
+                    <img src="/assets/servis/logo.jpg" alt="" />
                 </Link>
             </div>
             <nav className='flex flex-col justify-center items-center gap-8 text-white'>

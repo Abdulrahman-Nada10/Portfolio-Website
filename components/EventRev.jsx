@@ -32,7 +32,7 @@ const EventRev = () => {
         pagination={{ clickable: true }}
         modules={[Pagination, Autoplay]}
         autoplay={{
-          delay: 1000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         breakpoints={{

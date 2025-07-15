@@ -27,7 +27,7 @@ const team = [
   },
   {
     img: '/assets/Team/jo.jpg',
-    name: 'AYoussef Mansour',
+    name: 'Youssef Mansour',
   },
   {
     img: '/assets/Team/عائشه.jpg',
@@ -35,7 +35,7 @@ const team = [
   },
   {
     img: '/assets/Team/يسري.jpg',
-    name: 'Abdulrahman Nada',
+    name: 'Abdulrahman Yossre',
   },
       {
     img: '/assets/Team/boshra.jpg',
@@ -51,7 +51,7 @@ const team = [
   },
   {
     img: '/assets/Team/fatme.jpg',
-    name: 'Abdulrahman Nada',
+    name: 'Fatma Arafat',
   },
   {
     img: '/assets/Team/soma.jpg',
