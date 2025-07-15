@@ -16,9 +16,12 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Code Way",
     description: "موقع تعليمي للبرمجة",
-    icons: {
-    icon: "/favicon.ico",
-  },
+icons: {
+  icon: "/favicon.ico",
+  shortcut: "/favicon.ico",
+  apple: "/favicon.ico",
+},
+
 };
 
 
