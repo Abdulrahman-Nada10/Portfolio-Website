@@ -35,13 +35,13 @@ const MobileNav = () => {
         <SheetContent className="flex flex-col">
             <div className='mt-32 mb-40 text-center text-2xl'>
                 <Link href="/">
-                    <h1 className='text-4xl font-semibold'>Loki <span className='text-emerald-500'>.</span></h1>
+                    <h1 className='text-4xl font-semibold text-white'>CODE WAY <span className='text-[#78d0d3]'>.</span></h1>
                 </Link>
             </div>
-            <nav className='flex flex-col justify-center items-center gap-8'>
+            <nav className='flex flex-col justify-center items-center gap-8 text-white'>
               {Links.map((links , index) => {
                 return (
-                    <Link href={links.path} key={index} className={`${links.path === pathname && `text-emerald-500 border-b-2 border-emerald-500 text-xl capitalize hover:text-emerald-500 transition-all`} text-xl capitalize hover:text-emerald-500 transition-all`}>
+                    <Link href={links.path} key={index} className={`${links.path === pathname && `border-b-2 text-white border-[#78d0d3] text-xl capitalize hover:text-[#78d0d3] transition-all`} text-xl capitalize hover:text-[#78d0d3] transition-all`}>
                         {links.name}
                     </Link>
                 )

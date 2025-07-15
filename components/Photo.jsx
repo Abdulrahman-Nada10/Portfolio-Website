@@ -11,14 +11,10 @@ const Photo = () => {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 , transition: { delay: 2 , duration: 0.4 , ease:'easeIn'}}}
-      className="w-[298px] h-[350px] xl:w-[400px] xl:h-[498px] mix-blend-lighten rounded-[100px]">
+      className="w-[298px] h-[350px] xl:w-[500px] xl:h-[498px]  rounded-[100px]">
         <Image
-        src="/assets/loki.jpg"
-        priority
-        quality={100}
+        src="/assets/logo.jpg"
         fill
-        alt=""
-        className="rounded-4xl  brightness-50 "
         />
       </motion.div>
       </motion.dev>
