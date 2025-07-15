@@ -1,13 +1,6 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import CardActionArea from '@mui/material/CardActionArea';
-import CardActions from '@mui/material/CardActions';
 import Link from 'next/link';
-
+import Image from 'next/image';
 const team = [
   {
     img: '/assets/Team/loki.jpg',
@@ -68,6 +61,7 @@ const page = () => {
     <section>
       <div className='h-44 flex justify-center items-center bg-black'>
         <h1 className='text-white text-6xl font-bold'>Our Team</h1>
+        <Image src="/assets/Team/loki.jpg" alt="..." width={250} height={250} />
       </div>
 <div className="flex flex-wrap justify-center gap-6 my-8">
   {team.map((member, index) => (
