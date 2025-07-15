@@ -69,25 +69,26 @@ const page = () => {
       <div className='h-44 flex justify-center items-center bg-black'>
         <h1 className='text-white text-6xl font-bold'>Our Team</h1>
       </div>
-      <div className='flex flex-wrap justify-center gap-6 my-4'>
-        {team.map((team , index) => {
-          return (
-            <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <img
-                src={team.img}
-                alt={team.name}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div" className='text-center'>
-                  {team.name}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          )
-        })}
+<div className="flex flex-wrap justify-center gap-6 my-8">
+  {team.map((member, index) => (
+    <div
+      key={index}
+      className="w-[250px] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 duration-300"
+    >
+      <div className="w-full h-[250px]">
+        <img
+          src={member.img}
+          alt={member.name}
+          className="w-full h-full object-cover"
+        />
       </div>
+      <div className="p-4 text-center">
+        <h2 className="text-xl font-semibold text-gray-800">{member.name}</h2>
+      </div>
+    </div>
+  ))}
+</div>
+
       <Link href='/contact'>
         <button className="fixed bottom-5 right-5 bg-[#16323e] text-white px-6 py-3 rounded-full shadow-lg animate-bounce z-50">
           %50 <span>شترك بخصم</span>
