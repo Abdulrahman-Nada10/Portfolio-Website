@@ -207,12 +207,12 @@ const service = services.find((item) => item.slug === params.serviceID);
 
   if (!service) return <h1 className="text-center p-20 text-2xl">الخدمة غير موجودة ❌</h1>;
   return (
-    <div className="p-10 space-y-6 flex gap-6">
-        <img src={service.img} alt={service.title} className="w-96 rounded h-130" />
-        <div className='text-right flex flex-col'>
-            <h1 className="text-3xl font-bold p-2 mb-3">{service.title}</h1>
-            <p className="text-lg leading-relaxed text-gray-700 space-y-4">{service.description}</p>
-             <ul className="list-none space-y-2 pl-6 text-gray-700 leading-relaxed text-left flex flex-col flex-wrap h-100">
+    <div className="p-6 md:p-10 flex flex-col md:flex-row gap-6 items-center md:items-start">
+        <img src={service.img} alt={service.title} className="w-full md:w-[400px] rounded-xl object-cover h-auto" />
+        <div className='text-right flex flex-col gap-6 max-w-xl'>
+            <h1 className="text-2xl md:text-4xl font-bold">{service.title}</h1>
+            <p className="text-md md:text-lg leading-relaxed text-gray-700 whitespace-pre-line">{service.description}</p>
+             <ul className="list-none space-y-2 pl-0 text-gray-700 leading-relaxed text-right">
               {service.skilis.map((skill, index) => (
               <li key={index}>{skill}</li>
             ))}
