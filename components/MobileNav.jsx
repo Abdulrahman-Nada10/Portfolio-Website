@@ -33,9 +33,9 @@ const MobileNav = () => {
             <CiMenuFries className=" text-[32px] text-emerald-500"/>
         </SheetTrigger>
         <SheetContent className="flex flex-col">
-            <div className='mt-32 mb-40 text-center text-2xl'>
+            <div className='mt-32 mb-40 text-center text-2xl flex justify-center'>
                 <Link href="/">
-                    <img src="/assets/servis/logo.jpg" alt="" />
+                    <img src="/assets/servis/logo.jpg" alt="" className='w-[200px]'/>
                 </Link>
             </div>
             <nav className='flex flex-col justify-center items-center gap-8 text-white'>

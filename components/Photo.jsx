@@ -14,6 +14,7 @@ const Photo = () => {
       className="w-[298px] h-[350px] xl:w-[500px] xl:h-[498px]  rounded-[100px]">
         <Image
         src="/assets/logo.jpg"
+        alt="Logo"
         fill
         />
       </motion.div>
